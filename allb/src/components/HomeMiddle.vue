@@ -9,10 +9,10 @@
       <div class="part-1-image">
         <div class="part-1-header">
           <h3>
-            Fullstack Developer Class
+            Junior Full Stack Developer Class
           </h3>
         </div>
-        <div class="fullstack-image">
+        <div class="fullstack-image" @click="goToJuniorFullStackDeveloper">
           <img
             src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
             alt="image1"
@@ -129,6 +129,9 @@ export default {
         // code block
       }
     },
+    goToJuniorFullStackDeveloper(){
+    this.$router.push("/junior_full_stack_developer")
+    },
   },
 };
 </script>
@@ -157,6 +160,7 @@ export default {
     }
     .part-1-image {
       .fullstack-image {
+        cursor: pointer;
         .image1 {
           width: 50%;
           height: 400px;
